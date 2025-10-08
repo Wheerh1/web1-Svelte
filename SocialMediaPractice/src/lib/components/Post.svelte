@@ -8,7 +8,7 @@
     <h3>{postData.username}</h3>
 </header>
 <main>
-    <p>{postData.postext}</p>
+    <p>{postData.posttext}</p>
 </main>
 <footer>
     <p>{postData.postdate}</p>
