@@ -8,8 +8,10 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<h1>My website for stuff</h1>
-<Navagation/>
+<header>
+    <h1>My website for stuff</h1>
+    <Navagation/>
+</header>
 
 {@render children?.()}
 
