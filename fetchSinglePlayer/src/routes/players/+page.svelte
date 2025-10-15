@@ -7,6 +7,6 @@
 
 <ul>
     {#each data.players as player}
-        <li>{player.first_name} - {player.email}</li>
+        <li><a href="/players/{player.id}">{player.first_name} {player.last_name}</a></li>
     {/each}
 </ul>
