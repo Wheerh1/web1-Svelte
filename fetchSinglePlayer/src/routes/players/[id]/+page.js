@@ -1,3 +1,4 @@
+//                                 ↓params are key for just doing one thing or passing specific data
 export async function load({ fetch,params }) {
     const res = await fetch(`https://my.api.mockaroo.com/player/${params.id}.json?key=1c2be0a0`);
     const player =await res.json();
