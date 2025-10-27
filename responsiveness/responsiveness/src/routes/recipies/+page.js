@@ -1,5 +1,5 @@
 export async function load({fetch}) {
-    const res = await fetch ("'https://dummyjson.com/recipes/1'");
+    const res = await fetch ("https://dummyjson.com/recipes");
     const recipes = await res.json();
     return {recipes};
 }
