@@ -46,4 +46,10 @@ td{
         display: none;
     }
 }
+@media (max-width:416px){
+    tr th:nth-child(3),
+    tr td:nth-child(3){
+        display: none;
+    }
+}
 </style>
