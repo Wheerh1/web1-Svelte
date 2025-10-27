@@ -6,11 +6,11 @@
 <table>
     <thead>
         <tr>
-            <td>Rescipie name</td>
-            <td>prep time</td>
-            <td>difficulty</td>
-            <td>servings</td>
-            <td>cusine</td>
+            <th>Recipe name</th>
+            <th>prep time</th>
+            <th>difficulty</th>
+            <th>servings</th>
+            <th>cuisine</th>
         </tr>
     </thead>
     <tbody>
@@ -20,12 +20,30 @@
             <td>{recipe.prepTimeMinutes}</td>
             <td>{recipe.difficulty}</td>
             <td>{recipe.servings}</td>
-            <td>{recipe.cusine}</td>
+            <td>{recipe.cuisine}</td>
         </tr>
     {/each}
     </tbody>
 </table>
 
 <style>
+table{
+    table-layout: fixed;
+    width: 90%;
+    margin-top: 10px, auto;
     
+    border-collapse: collapse;
+}
+th,
+td{
+    border:1px, solid black;
+    padding: 0.6em;
+}
+
+@media (max-width:786px){
+    tr th:nth-child(5),
+    tr td:nth-child(5){
+        display: none;
+    }
+}
 </style>
